@@ -3,6 +3,7 @@ package Sem_1.main.clients;
 import java.time.LocalDate;
 
 public class Animal {
+    public Double discount;
     protected String nickname;
     protected Owner owner;
     protected LocalDate birthDate;
@@ -55,9 +56,17 @@ public class Animal {
         eat();
         sleep();
     }
+
+    public void skills(){
+        toGo();
+        fly();
+        swim();
+    }
+
+
+
     private void wakeUp() {
         System.out.println("wake up");
-
     }
 
     private void wakeUp(String time) {
@@ -78,6 +87,17 @@ public class Animal {
         System.out.println(nickname + "sleep");
     }
 
+    public void toGo(){
+        System.out.println(nickname + " is moving!");
+    }
+
+    public void fly(){
+        System.out.println(nickname + " is flying!");
+    }
+
+    public void swim(){
+        System.out.println(nickname + " is swimming!");
+    }
 
     public String getType(){
         return getClass().getSimpleName();
@@ -86,6 +106,6 @@ public class Animal {
     @Override
     public String toString() {
         return String.format("nickName = %s, bd = %s, owner = %s," +
-                " illness = %s", nickname, birthDate, owner,illness);
+                " illness = %s", nickname, birthDate, owner, illness);
     }
 }
