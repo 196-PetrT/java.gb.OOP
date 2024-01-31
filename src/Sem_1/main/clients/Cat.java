@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class Cat extends Animal{
     // todo напомнить в чем разница в double
-    Double discount;
+
     public Cat(String nickname, Owner owner, LocalDate birthDate,
                Illness illness, Double discount) {
         super(nickname, owner, birthDate, illness);
@@ -33,5 +33,14 @@ public class Cat extends Animal{
     @Override
     public String toString() {
         return super.toString() + ", Discount(" + discount + ")";
+    }
+
+    @Override
+    public void swim(){
+        System.out.println(nickname + " is not swimming!");
+    }
+    @Override
+    public void fly() {
+        System.out.println(nickname + " is not flying!");
     }
 }
