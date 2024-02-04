@@ -1,3 +1,4 @@
+package Sem_2;
 import java.time.LocalDate;
 
 public class Dog extends Animal implements Goable, Huntable {

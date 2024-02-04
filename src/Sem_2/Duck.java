@@ -1,3 +1,5 @@
+package Sem_2;
+
 import java.time.LocalDate;
 public class Duck extends Animal{
     public Duck (String nickName, Owner owner, LocalDate birthDate, Illness illness) {

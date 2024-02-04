@@ -1,3 +1,5 @@
+package Sem_2;
+
 public class Illness {
     String title;
 

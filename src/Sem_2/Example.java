@@ -1,16 +1,18 @@
+package Sem_2;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class Example {
-    public static void main(String[] args) {
-        Mathematics m = (a, b) -> a+b;
-        Mathematics x = Double::sum; // лямбда функция
-        System.out.println(x.add(45, 56));
-    }
-}
-interface Mathematics {
-    double add(double a, double b);
-}
+//public class Example {
+//    public static void main(String[] args) {
+////        Mathematics m = (a, b) -> a+b;
+//        Mathematics x = Double::sum; // лямбда функция
+//        System.out.println(x.add(45, 56));
+//    }
+//}
+//interface Mathematics {
+//    double add(double a, double b);
+//}
 
 class Calculator {
     static Map<Character,Calculable> map = new HashMap<>();

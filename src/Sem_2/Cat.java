@@ -1,3 +1,5 @@
+package Sem_2;
+
 import java.time.LocalDate;
 
 public class Cat extends Animal implements Goable, Huntable {
