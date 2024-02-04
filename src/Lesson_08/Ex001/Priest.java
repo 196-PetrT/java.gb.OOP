@@ -16,6 +16,11 @@ public class Priest extends BaseHero {
         return String.format("%s  Elixir: %d", super.getInfo(), this.elixir);
     }
 
+    @Override
+    public void die() {
+
+    }
+
     public void attack(BaseHero target) {
         int damage = BaseHero.r.nextInt(10, 20);
         target.GetDamage(damage);

@@ -42,30 +42,30 @@ public class Program {
 
         // #region ToDo BaseHero
 
-        // // BaseHero hero = new BaseHero();
-        // // System.out.println(hero.getInfo());
-        // // ToDo BaseHero
-        // Priest priest = new Priest();
-        // System.out.println(priest.getInfo());
-        // Druid druid = new Druid();
-        // System.out.println(druid.getInfo());
-        // Magician magician = new Magician();
-        // System.out.println(magician.getInfo());
+         // BaseHero hero = new BaseHero();
+         // System.out.println(hero.getInfo());
+         // ToDo BaseHero
+         Priest priest = new Priest();
+         System.out.println(priest.getInfo());
+         Druid druid = new Druid();
+         System.out.println(druid.getInfo());
+         Magician magician = new Magician();
+         System.out.println(magician.getInfo());
 
-        // priest.attack(magician);
-        // System.out.println(magician.getInfo());
-        // priest.attack(magician);
-        // System.out.println(magician.getInfo());
-        // druid.healing(magician);
-        // System.out.println(magician.getInfo());
-        // druid.healing(magician);
-        // System.out.println(magician.getInfo());
-        // druid.healing(magician);
-        // System.out.println(magician.getInfo());
-        // druid.healing(magician);
-        // System.out.println(magician.getInfo());
-        // druid.healing(magician);
-        // System.out.println(magician.getInfo());
+         priest.attack(magician);
+         System.out.println(magician.getInfo());
+         priest.attack(magician);
+         System.out.println(magician.getInfo());
+         druid.healing(magician);
+         System.out.println(magician.getInfo());
+         druid.healing(magician);
+         System.out.println(magician.getInfo());
+         druid.healing(magician);
+         System.out.println(magician.getInfo());
+         druid.healing(magician);
+         System.out.println(magician.getInfo());
+         druid.healing(magician);
+         System.out.println(magician.getInfo());
 
         // #endregion
 

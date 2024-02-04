@@ -15,6 +15,11 @@ public class Druid extends BaseHero {
         return String.format("%s  Harmony: %d", super.getInfo(), this.harmony);
     }
 
+    @Override
+    public void die() {
+
+    }
+
     public void healing(BaseHero target) {
         int heal = BaseHero.r.nextInt(10, 20);
         if (this.harmony >= heal) {
