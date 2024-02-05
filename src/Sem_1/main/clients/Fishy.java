@@ -2,9 +2,9 @@ package Sem_1.main.clients;
 
 import java.time.LocalDate;
 
-public class Fishy extends Animal {
+public class Fishy extends Animal implements Swimable {
     public Fishy(String nickname, Owner owner, LocalDate birthDate,
-                Illness illness, Double discount) {
+                 Illness illness, Double discount) {
         super(nickname, owner, birthDate, illness);
         this.discount = discount;
     }
@@ -14,7 +14,6 @@ public class Fishy extends Animal {
     }
 
     @Override
-    public void fly(){
-        System.out.println(nickname + " is not flying!");
+    public void swim() {
     }
 }

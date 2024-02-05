@@ -4,11 +4,10 @@ import java.time.LocalDate;
 
 // пример наследования, кошки чем-то отличаются)
 
-public class Cat extends Animal{
-    // todo напомнить в чем разница в double
+public class Cat extends Animal implements Goable {
 
     public Cat(String nickname, Owner owner, LocalDate birthDate,
-               Illness illness, Double discount) {
+               Illness illness) {
         super(nickname, owner, birthDate, illness);
         this.discount = discount;
     }
@@ -36,11 +35,12 @@ public class Cat extends Animal{
     }
 
     @Override
-    public void swim(){
-        System.out.println(nickname + " is not swimming!");
+    public void toGo() {
     }
+
     @Override
-    public void fly() {
-        System.out.println(nickname + " is not flying!");
+    public double getRunSpeed() {
+        return Goable.super.getRunSpeed();
     }
+
 }

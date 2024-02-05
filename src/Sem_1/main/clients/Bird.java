@@ -2,7 +2,7 @@ package Sem_1.main.clients;
 
 import java.time.LocalDate;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements Goable, Flyable {
     public Bird(String nickname, Owner owner, LocalDate birthDate,
                 Illness illness, Double discount) {
         super(nickname, owner, birthDate, illness);
@@ -15,7 +15,10 @@ public class Bird extends Animal {
 
 
     @Override
-    public void swim(){
-        System.out.println(nickname + " is not swimming!");
+    public void toGo() {
     }
+    @Override
+    public void fly() {
+    }
+
 }
