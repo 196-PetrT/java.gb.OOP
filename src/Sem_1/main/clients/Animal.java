@@ -2,7 +2,7 @@ package Sem_1.main.clients;
 
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
     public Double discount;
     protected String nickname;
     protected Owner owner;
@@ -15,18 +15,11 @@ public class Animal {
         this.owner = owner;
         this.birthDate = birthDate;
         this.illness = illness;
-
-
     }
 
     public Animal() {
-//        this.nickname = "Кличка";
-//        this.owner = new Owner("A");
-//        this.birthDate = LocalDate.now();
-//        this.illness = new Illness("болеет");
         this("Кличка", new Owner("Владелец"), LocalDate.now(),
                 new Illness("здоров"));
-
     }
 
     public String getNickname() {
@@ -47,23 +40,7 @@ public class Animal {
 
     public void setIllness(Illness illness) {
         this.illness = illness;
-//        int x = 13; // сотрется по завершению метода
     }
-
-    public void lifeCycle(){
-        wakeUp("12/00");
-        hunt();
-        eat();
-        sleep();
-    }
-
-    public void skills(){
-        toGo();
-        fly();
-        swim();
-    }
-
-
 
     private void wakeUp() {
         System.out.println("wake up");
@@ -71,8 +48,6 @@ public class Animal {
 
     private void wakeUp(String time) {
         System.out.println(nickname + "wake up to " + time); // пример перегрузки - полиморфизм
-// или
-//      wakeUp("12/00"); // та-же перегрузка
     }
 
     private void hunt() {

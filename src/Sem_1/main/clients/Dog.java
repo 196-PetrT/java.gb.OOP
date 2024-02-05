@@ -2,7 +2,7 @@ package Sem_1.main.clients;
 
 import java.time.LocalDate;
 
-public class Dog extends Animal{
+public class Dog extends Animal  implements Goable, Swimable {
     Double discount;
     public Dog(String nickname, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickname, owner, birthDate, illness);
@@ -12,5 +12,13 @@ public class Dog extends Animal{
     public Dog() {
         super();
         this.discount = 15D;
+    }
+
+    @Override
+    public void toGo() {
+    }
+
+    @Override
+    public void swim() {
     }
 }
