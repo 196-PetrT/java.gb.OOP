@@ -1,4 +1,4 @@
-package Sem_1.main.medPersonal;
+package Sem_1.main.base.medPersonal;
 
 public class Office {
     String title;

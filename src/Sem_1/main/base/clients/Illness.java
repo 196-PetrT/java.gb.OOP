@@ -1,4 +1,4 @@
-package Sem_1.main.clients;
+package Sem_1.main.base.clients;
 
 public class Illness {
     String title;

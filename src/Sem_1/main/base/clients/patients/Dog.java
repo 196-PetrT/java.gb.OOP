@@ -1,24 +1,28 @@
-package Sem_1.main.clients;
+package Sem_1.main.base.clients.patients;
+
+import Sem_1.main.base.clients.*;
 
 import java.time.LocalDate;
 
-public class Dog extends Animal  implements Goable, Swimable {
-    Double discount;
+public class Dog extends Patients implements Goable, Swimable {
+
     public Dog(String nickname, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickname, owner, birthDate, illness);
-        this.discount = discount;
+
+        this.discount = 15D;
     }
 
     public Dog() {
         super();
-        this.discount = 15D;
     }
-
     @Override
     public void toGo() {
     }
 
     @Override
     public void swim() {
+
+
     }
+
 }

@@ -1,8 +1,10 @@
-package Sem_1.main.clients;
+package Sem_1.main.base.clients.patients;
+
+import Sem_1.main.base.clients.*;
 
 import java.time.LocalDate;
 
-public class Bird extends Animal implements Goable, Flyable {
+public class Bird extends Patients implements Goable, Flyable{
     public Bird(String nickname, Owner owner, LocalDate birthDate,
                 Illness illness, Double discount) {
         super(nickname, owner, birthDate, illness);
@@ -15,10 +17,14 @@ public class Bird extends Animal implements Goable, Flyable {
 
 
     @Override
-    public void toGo() {
-    }
-    @Override
     public void fly() {
+
     }
 
+    @Override
+    public void toGo() {
+
+    }
 }
+
+

@@ -1,15 +1,16 @@
-package Sem_1.main.clients;
+package Sem_1.main.base.clients;
 
 import java.time.LocalDate;
 
-public abstract class Animal {
+public abstract class Patients {
     public Double discount;
     protected String nickname;
     protected Owner owner;
     protected LocalDate birthDate;
     protected Illness illness;
+    public double distance;
 
-    public Animal(String nickname, Owner owner, LocalDate birthDate,
+    public Patients(String nickname, Owner owner, LocalDate birthDate,
                   Illness illness) {
         this.nickname = nickname;
         this.owner = owner;
@@ -17,33 +18,8 @@ public abstract class Animal {
         this.illness = illness;
     }
 
-    public Animal() {
-        this("Кличка", new Owner("Владелец"), LocalDate.now(),
-                new Illness("здоров"));
-    }
+    public Patients() {
 
-    public String getNickname() {
-        return nickname;
-    }
-
-    public Owner getOwner() {
-        return owner;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public Illness getIllness() {
-        return illness;
-    }
-
-    public void setIllness(Illness illness) {
-        this.illness = illness;
-    }
-
-    private void wakeUp() {
-        System.out.println("wake up");
     }
 
     private void wakeUp(String time) {
@@ -63,15 +39,18 @@ public abstract class Animal {
     }
 
     public void toGo(){
-        System.out.println(nickname + " is moving!");
+        System.out.println(nickname + " прошел за сегодня: ");
+
     }
 
     public void fly(){
-        System.out.println(nickname + " is flying!");
+        System.out.println(nickname + " пролетел за сегодня: ");
+
     }
 
     public void swim(){
-        System.out.println(nickname + " is swimming!");
+        System.out.println(nickname + " проплыл за сегодня: ");
+
     }
 
     public String getType(){
