@@ -11,7 +11,7 @@ public class Program {
     public static void main(String[] args) {
         Component water = new Water("Water", 10D, 1);
 
-        Component azitronite = new Azintronite("Azintronite", 2D, 14);
+        Component azitronite = new Azintronite("Azintronite", 2D, 8);
 
         Component penicillin = new Penicillin("Penicillin", 1.6D, 6);
 
@@ -30,20 +30,34 @@ public class Program {
         components.add(water);
         components.add(penicillin);
 
-        System.out.println(components);
-        Collections.sort(components);
-        System.out.println(components);
+        List<Pharmacy2> pharmacys = new ArrayList<>();
+
+        pharmacys.add(p1);
+        pharmacys.add(p2);
+        pharmacys.add(p3);
+
+//        System.out.println(components);
+//        Collections.sort(components);
+//        System.out.println(components);
+
+
+
+        Collections.sort(pharmacys);
+        for (Pharmacy2 pharmacy : pharmacys) {
+            System.out.println(pharmacy);
+        }
 
 //        Iterator<Component> iterator = p1;
 //
 //        while (iterator.hasNext()){
 //            System.out.println(p1.next().toString());
 //        }
-        for (Component c : p2) {
-            System.out.println(c);
-        }
+//        for (Component c : p2) {
+//            System.out.println(c);
+//        }
 
 
 
     }
+
 }
