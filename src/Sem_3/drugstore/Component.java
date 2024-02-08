@@ -7,10 +7,17 @@ public abstract class Component implements Comparable<Component>{
 
     private final int power;
 
+    public Double getMlWeight() {  // чтобы не кастовать
+
+        return weight*1000;
+    }
+
     public Component(String title, Double weight, int power) {
         this.title = title;
         this.weight = weight;
         this.power = power;
+
+
     }
 
     @Override
