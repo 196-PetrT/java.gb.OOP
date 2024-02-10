@@ -16,13 +16,13 @@ public class GBArrayList<T> implements GBList<T> {
     public GBArrayList() {
         this.size = 0;
         this.capacity = 2;
-        this.values = (T[]) new Object[capacity];
+//        this.values = (T[]) new Object[capacity];
         // по правильному нужно сделать исключение
-//        try {
-//            this.values = (T[]) new Object[capacity];
-//        } catch (ClassCastException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            this.values = (T[]) new Object[capacity];
+        } catch (ClassCastException e) {
+            e.printStackTrace();
+        }
 
 
     }
@@ -48,14 +48,16 @@ public class GBArrayList<T> implements GBList<T> {
 
     @Override
     public void remove(int index) {
-//       todo сделать в try catch
-        capacity = capacity -1;
-        T[] temp = (T[]) new Object[capacity];
-        System.arraycopy(values, 0, temp, 0, index);
-        int amountElementsAfterIndex = values.length - index - 1;
-        System.arraycopy(values, index + 1, temp, index, amountElementsAfterIndex);
-        values = temp;
-        size--;
+        try {
+            capacity = capacity - 1;
+            T[] temp = (T[]) new Object[capacity];
+            System.arraycopy(values, 0, temp, 0, index);
+            int amountElementsAfterIndex = values.length - index - 1;
+            System.arraycopy(values, index + 1, temp, index, amountElementsAfterIndex);
+            values = temp;
+            size--;
+        } catch (ClassCastException e) {
+            e.printStackTrace();}
     }
 
     @Override
