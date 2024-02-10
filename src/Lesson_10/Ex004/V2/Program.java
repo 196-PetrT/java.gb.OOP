@@ -20,8 +20,8 @@ public class Program {
         
         //#region проблема решена
 
-        // audioStorage.add(new VideoContent("jfvjdhdf7768.mp4")); 
-        // videoStorage.add(new AudioContent("Дорожка 005.wav")); 
+//         audioStorage.add(new VideoContent("jfvjdhdf7768.mp4"));
+//         videoStorage.add(new AudioContent("Дорожка 005.wav"));
 
         //#endregion
 

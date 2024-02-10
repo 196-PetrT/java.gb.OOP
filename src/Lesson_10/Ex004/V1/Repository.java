@@ -12,7 +12,7 @@ public class Repository {
     public Repository(String name) {
         this.ds = new ArrayList<>();
         this.name = name;
-        System.out.printf("\n  >>  %s created\n",this.name);
+//        System.out.printf("\n  >>  %s created\n",this.name);
     }
 
     public void add(Content content) {
