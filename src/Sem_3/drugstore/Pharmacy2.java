@@ -67,14 +67,17 @@ public  class Pharmacy2 implements Iterable<Component>, Comparable<Pharmacy2>, C
             ComponentsWeight1 += c.getMlWeight();
         }
 //        return Integer.compare(this.components, o.components); // пишет нельзя так
-        if (ComponentsWeight0 > ComponentsWeight1) {
-            result =  -1;
-        } else if (ComponentsWeight0 < ComponentsWeight1) {
-            result =  1;
-        } else {
-            result =  0;
-        }
-        return  result;
+
+        // правильное через Integer.compare
+        return Integer.compare(ComponentsWeight1, ComponentsWeight0);
+//        if (ComponentsWeight0 > ComponentsWeight1) {
+//            result =  -1;
+//        } else if (ComponentsWeight0 < ComponentsWeight1) {
+//            result =  1;
+//        } else {
+//            result =  0;
+//        }
+//        return  result;
     }
 
 

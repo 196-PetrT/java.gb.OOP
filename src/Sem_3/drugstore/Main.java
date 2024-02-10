@@ -4,10 +4,9 @@ import Sem_3.drugstore.components.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
-public class Program {
+public class Main {
     public static void main(String[] args) {
         Component water = new Water("Water", 10D, 1);
 
