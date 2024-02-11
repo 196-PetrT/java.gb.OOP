@@ -1,11 +1,9 @@
 package Sem_4.listGB;
 
-import Sem_4.listGB.core.GBList;
-import Sem_4.listGB.core.impl.GBArrayList;
 import Sem_4.listGB.core.impl.GBLinkedList;
 
 
-public class ArrayListMain {
+public class Main {
 
     public static void main(String[] args) {
 //        GBList<Integer> list = new GBArrayList<>();
@@ -27,6 +25,7 @@ public class ArrayListMain {
         list.addFirst(3);
         System.out.println(list);
         System.out.println(list.size());
+        System.out.println(list.get(1));
 
 
 

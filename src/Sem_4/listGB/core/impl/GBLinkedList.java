@@ -65,7 +65,7 @@ public class GBLinkedList<T> implements GBList<T>, GBLList<T> {
             Node<T> x = first;
                 for (int i = 0; i < index; i++)
                     x = x.next;
-                return (T) x;
+                return x.item;
             }
     }
 
