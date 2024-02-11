@@ -1,10 +1,10 @@
-package Ex003Math.Client;
+package Lesson_11.Ex003Math.Client;
 
-import Ex003Math.Core.Models.Model;
-import Ex003Math.Core.Presenters.Presenter;
-import Ex003Math.Core.Views.View;
-import Ex003Math.Mathematics.CalculateArea.CalculateArea;
-import Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
+import Lesson_11.Ex003Math.Core.Models.Model;
+import Lesson_11.Ex003Math.Core.Presenters.Presenter;
+import Lesson_11.Ex003Math.Core.Views.View;
+import Lesson_11.Ex003Math.Mathematics.CalculateArea.CalculateArea;
+import Lesson_11.Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
 
 public class App {
     Presenter p;

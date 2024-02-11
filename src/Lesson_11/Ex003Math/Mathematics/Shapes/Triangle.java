@@ -1,4 +1,4 @@
-package Ex003Math.Mathematics.Shapes;
+package Lesson_11.Ex003Math.Mathematics.Shapes;
 
 public class Triangle {
     /// ???...

@@ -1,5 +1,7 @@
-package Ex002Phonebook.Core.MVP;
-import Ex002Phonebook.Core.Models.Contact;
+package Lesson_11.Ex002Phonebook.Core.MVP;
+
+import Lesson_11.Ex002Phonebook.Core.Models.Contact;
+
 public class Presenter {
     
     private Model model;

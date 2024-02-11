@@ -1,4 +1,4 @@
-package Ex003Math.Core.Infrastructure;
+package Lesson_11.Ex003Math.Core.Infrastructure;
 
 import java.util.Random;
 
